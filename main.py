@@ -172,12 +172,12 @@ with market_tab.container(border=True):
                     st.session_state["user"]["money"] -= 300
         st.write("Plot 4")
 
-    if st.button("Purchase Water Refill for $50"):
-        if st.session_state["user"]["money"] < 50:
+    if st.button("Purchase Water Refill for $25"):
+        if st.session_state["user"]["money"] < 25:
             st.toast("❌ You can't afford that!")
         else:
             st.session_state["user"]["water"] = 100
-            st.session_state["user"]["money"] -= 50
+            st.session_state["user"]["money"] -= 25
 
 with field_tab:
     st.columns([5, 9])[1].write("Welcome to the Fields")
